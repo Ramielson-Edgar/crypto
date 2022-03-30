@@ -322,14 +322,13 @@ a {
   padding: 22px 60px;
   border-radius: 51px;
   background-color: var(--text-color-dark);
+  box-shadow:  -10px -10px 30px rgba(255, 255, 255, 0.4), 10px 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .btn-primary:focus,
 .btn-primary:hover,
 .btn-white:focus,
-.btn-white:hover,
-.btn-black:focus,
-.btn-black:hover {
+.btn-white:hover {
   color: var(--white-color);
   box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.4),
     10px 10px 30px rgba(255, 106, 249, 0.4);
@@ -337,13 +336,13 @@ a {
   text-decoration: none;
 }
 
-.copy-section .btn-black:focus,
-.copy-section .btn-black:hover,
-.btn-black:focus,
-.btn-black:hover {
-  color: var(--text-color-dark);
+ .btn-black:focus,
+ .btn-black:hover{
+  color: var(--text-color-dark) !important;
   background-color: var(--white-color);
   text-decoration: none;
+   box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.4),
+    10px 10px 30px rgba(255, 106, 249, 0.4);
 }
 
 .btn-white {
@@ -351,10 +350,9 @@ a {
   background-color: var(--white-color);
 }
 
-.btn-white:focus,
-.btn-white:hover {
-  color: var(--text-color-dark);
-}
+
+
+
 
 /* MAIN SECTION  */
 .wrapper-hero {
@@ -392,7 +390,7 @@ a {
   width: 100%;
   height: 700px;
 
-  background-image: url("../img/transition-section-wave.svg");
+  background-image: url("./img/transition-section-wave.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -464,31 +462,21 @@ a {
     10px 10px 30px rgba(255, 106, 249, 0.4);
 }
 
-.list__item {
+.item__list {
   position: relative;
-  padding-left: 30px;
+ list-style: none;
 }
 
-.list__item::after,
 .list__item::before {
-  position: absolute;
-  display: block;
-  content: "";
-  top: 50%;
-  left: 0px;
-  transform: translate(-50%, -50%);
+  display: inline-block;
+  width: 1em;
 
-  width: 17px;
-  height: 17px;
+  content: "•";
 
-  background-color: #94cdbd;
-  border-radius: 50px;
-}
-
-.list__item::after {
-  width: 10px;
-  height: 10px;
-  background-color: #a0ffc6;
+  color:var(--white-color);
+  
+  vertical-align: middle;
+  margin-left: -1em
 }
 
 .card {
@@ -523,7 +511,7 @@ a {
   width: 100%;
   height: 600px;
 
-  background-image: url("../img/separator-banner-wave-svg.svg");
+  background-image: url("/img/separator-banner-wave-svg.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
