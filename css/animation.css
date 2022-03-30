@@ -1,0 +1,61 @@
+.features__item {
+  clip-path: circle(0% at 0 0);
+}
+
+
+.hero-img {
+    clip-path: circle(1.8% at 50% 50%);
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+.hero-h1,
+.wrapper-hero {
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transform: translateY(60px);
+    opacity: 0; 
+}
+
+
+
+
+.icon-down {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+
+.account-description,
+.type-account {
+    transform: translateX(-1000%);
+}
+
+
+.header-banner {
+     opacity: 0;
+}
+
+.discover-section,
+.account-section::before {
+     clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+     opacity: 0;
+}
+ 
+
+.btn-primary-reveal,
+.btn-secondary-reveal,
+.security-item {
+    opacity: 0;
+    transform: translateY(60px);
+}
+ 
+.copy-section-btn {
+    opacity: 0;
+}
+
+.copy-section-desc,
+.copy-section-img,  
+.copy-section-header {
+    clip-path: polygon(100% 0, 0 0, 0 0, 100% 0);
+    opacity: 0;
+}
