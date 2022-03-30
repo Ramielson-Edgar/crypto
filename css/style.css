@@ -329,7 +329,6 @@ a {
 .btn-primary:hover,
 .btn-white:focus,
 .btn-white:hover {
-  color: var(--white-color);
   box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.4),
     10px 10px 30px rgba(255, 106, 249, 0.4);
   outline: none;
@@ -349,9 +348,7 @@ a {
   color: var(--text-color-dark);
   background-color: var(--white-color);
 }
-
-
-
+.btn-white:hover {color: var(--text-color-dark);}
 
 
 /* MAIN SECTION  */
