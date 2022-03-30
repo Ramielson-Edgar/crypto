@@ -858,10 +858,11 @@ tr:not(:last-child) td {
   }
 }
 
-@media (max-width: 1188px) {
+@media (max-width: 1198px) {
   .account-stats {
     padding: 25px 30px 30px 90px;
   }
+  .section-header h2 {font-size: var(--font-size-40);}
 }
 
 @media (max-width: 991.98px) {
