@@ -26,7 +26,7 @@ tl.to(
 tl.to(
   ".hero-img",
   {
-    "clip-path": "circle(76.4% at 47% 45%)",
+    "clip-path": "circle(300% at 100% 100%)",
     opacity: 1,
     y: 0,
     duration: 1.5,
@@ -94,7 +94,7 @@ gsap.to(".features__item", {
   },
 
   stagger: 0.3,
-  "clip-path": "circle(138.4% at 2% 50%)",
+  "clip-path": "circle(300% at 50% 200%)",
   opacity: 1,
   duration: 1,
 });
@@ -161,7 +161,6 @@ gsap.to(".discover-section", {
 gsap.to(".copy-section-header", {
   scrollTrigger: {
     trigger: ".copy-section-header",
-    start: "top center",
     toggleActions: "play pause resume none",
   },
 
