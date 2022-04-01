@@ -763,6 +763,10 @@ tr:not(:last-child) td {
 }
 
 .icon-fiat-account::before {
+  width: 200px;
+    height: 180px;
+    top: -40px;
+    left: -50px;
   background-image: url("../img/icon-fiat-account.png");
 }
 
