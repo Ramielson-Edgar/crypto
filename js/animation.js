@@ -57,7 +57,7 @@ gsap.to(".header-banner", {
 
   duration: 1,
   opacity: 1,
-  delay: 0.6,
+  delay: 0.3,
 });
 
 gsap.to(".security-item", {
@@ -118,19 +118,7 @@ gsap.to(".type-account", {
   },
 
   opacity: 1,
-  duration: 1,
-  x: 0,
-});
-
-gsap.to(".account-description", {
-  scrollTrigger: {
-    trigger: ".account-description",
-    start: "-150px center",
-    toggleActions: "play pause resume none",
-  },
-
-  opacity: 1,
-  duration: 1,
+  duration: 1.5,
   x: 0,
 });
 

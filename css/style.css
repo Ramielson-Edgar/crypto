@@ -21,9 +21,21 @@
   --text-color-dark: #37333d;
   ---text-color-accent: #651fff;
   --icon-green: #a0ffc6;
-  --main-gradient: radial-gradient(50% 50% at top right, rgba(255, 228, 133, 0.2) 0%, rgba(255, 228, 133, 0) 100%),
-    radial-gradient(50% 50% at 70% 20%, rgba(255, 228, 133, 0.3) 0%, rgba(255, 228, 133, 0) 100%),
-    linear-gradient(101.57deg, #fea07a -131.04%, rgba(135, 72, 239, 0.57) 60.49%);
+  --main-gradient: radial-gradient(
+      50% 50% at top right,
+      rgba(255, 228, 133, 0.2) 0%,
+      rgba(255, 228, 133, 0) 100%
+    ),
+    radial-gradient(
+      50% 50% at 70% 20%,
+      rgba(255, 228, 133, 0.3) 0%,
+      rgba(255, 228, 133, 0) 100%
+    ),
+    linear-gradient(
+      101.57deg,
+      #fea07a -131.04%,
+      rgba(135, 72, 239, 0.57) 60.49%
+    );
 }
 
 html {
@@ -308,13 +320,15 @@ a {
   padding: 20px 31px;
   border-radius: 51px;
   background: linear-gradient(94.7deg, #fb44ff -53.76%, #ee950f 121.32%);
-  box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.7), 10px 10px 30px rgba(112, 34, 13, 0.2);
+  box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.7),
+    10px 10px 30px rgba(112, 34, 13, 0.2);
 }
 
 .btn-secondary {
   padding: 22px 60px;
   background: linear-gradient(96.76deg, #44a5ff -31.91%, #11ffd5 89.1%);
-  box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.5), 10px 10px 30px rgba(35, 44, 46, 0.3);
+  box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.5),
+    10px 10px 30px rgba(35, 44, 46, 0.3);
   border-radius: 51px;
 }
 
@@ -325,14 +339,16 @@ a {
   padding: 22px 60px;
   border-radius: 51px;
   background-color: var(--text-color-dark);
-  box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.4), 10px 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.4),
+    10px 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .btn-primary:focus,
 .btn-primary:hover,
 .btn-white:focus,
 .btn-white:hover {
-  box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.4), 10px 10px 30px rgba(255, 106, 249, 0.4);
+  box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.4),
+    10px 10px 30px rgba(255, 106, 249, 0.4);
   outline: none;
   text-decoration: none;
 }
@@ -342,7 +358,8 @@ a {
   color: var(--text-color-dark) !important;
   background-color: var(--white-color);
   text-decoration: none;
-  box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.4), 10px 10px 30px rgba(255, 106, 249, 0.4);
+  box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.4),
+    10px 10px 30px rgba(255, 106, 249, 0.4);
 }
 
 .btn-white {
@@ -361,13 +378,27 @@ a {
   display: none;
 }
 
+.account-description .heading,
 .hero-section-header .heading {
   display: inline;
   font-size: var(--font-size-70);
 }
+
+.account-description .heading img,
 .hero-section-header .heading img {
   display: inline;
   vertical-align: text-bottom;
+}
+
+.account-description .heading img {
+  width: 150px;
+}
+.account-description .heading {
+  font-size: var(--font-size-50);
+}
+
+.account-description .description {
+  margin-top: 50px;
 }
 
 .hero-section-header {
@@ -460,7 +491,8 @@ a {
   background: transparent;
   border-radius: 17px;
   transform: translateY(-20px);
-  box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.4), 10px 10px 30px rgba(255, 106, 249, 0.4);
+  box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.4),
+    10px 10px 30px rgba(255, 106, 249, 0.4);
 }
 
 .item__list {
@@ -516,7 +548,7 @@ a {
   content: "";
   display: block;
 
-  top: 84%;
+  top: 85%;
   left: 50%;
   transform: translate(-50%, -50%);
 
@@ -544,8 +576,10 @@ a {
   margin-right: 10px;
 }
 
-.account-stats > span { font-weight: 300;}
-
+.account-stats > span {
+  font-weight: 300;
+}
+ 
 .account-stats::before {
   position: absolute;
   display: block;
@@ -563,6 +597,31 @@ a {
   background-position: center;
   background-size: contain;
 }
+
+.account-stats::after {
+ position: absolute;
+  display: block;
+
+  top: -30px;
+  right: -20px;
+
+  content: "";
+
+  width: 73px;
+  height: 73px;
+
+  background: linear-gradient(
+    180deg,
+    #ffffff -35.42%,
+    rgba(255, 249, 249, 0) 186.11%
+  );
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  backdrop-filter: blur(4px);
+
+  border-radius: 10px 0px 11px;
+}
+
 .account-description {
   position: relative;
   padding: 0 40px 0;
@@ -578,7 +637,11 @@ a {
 
 table {
   width: 100%;
-  background: linear-gradient(180deg, #ffffff -22.4%, rgba(255, 255, 255, 0.63) 58.87%);
+  background: linear-gradient(
+    180deg,
+    #ffffff -22.4%,
+    rgba(255, 255, 255, 0.63) 58.87%
+  );
   border: 1px solid #ffffff;
   box-shadow: 18px 41px 50px -10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -608,8 +671,10 @@ tr:not(:last-child) td {
 .header-banner::before {
   position: absolute;
   display: block;
-  top: -30%;
-  right: 0;
+
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
 
   content: "";
   max-width: 100%;
@@ -634,6 +699,10 @@ tr:not(:last-child) td {
   align-items: center;
   justify-content: center;
   gap: 20px;
+}
+
+.discover-header {
+  font-weight: 500;
 }
 
 .btn-wrapper {
@@ -666,7 +735,11 @@ tr:not(:last-child) td {
 
 .btn-account {
   position: relative;
-  background: linear-gradient(180deg, #ffffff -71.5%, rgba(255, 255, 255, 0) 182.25%);
+  background: linear-gradient(
+    180deg,
+    #ffffff -71.5%,
+    rgba(255, 255, 255, 0) 182.25%
+  );
   border: 1px solid #ffffff;
   box-sizing: border-box;
   box-shadow: 0px 57px 50px -20px rgba(97, 97, 97, 0.2);
@@ -677,12 +750,16 @@ tr:not(:last-child) td {
   transition: all 0.3s ease-in;
 }
 
-  .btn-account .split-wrapper p { font-weight: 500;}
-  .btn-account .split-wrapper .bx-chevron-right {font-weight: 600;}
-  .btn-account .split-wrapper {
-    justify-content: center;
-    align-items: center;
-  }
+.btn-account .split-wrapper p {
+  font-weight: 300;
+}
+.btn-account .split-wrapper .bx-chevron-right {
+  font-weight: 600;
+}
+.btn-account .split-wrapper {
+  justify-content: center;
+  align-items: center;
+}
 
 .btn-account::after,
 .btn-account::before {
@@ -696,7 +773,6 @@ tr:not(:last-child) td {
   width: 150px;
   height: 150px;
 
-  background-image: url("../img/icon-fiat-account.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -708,11 +784,21 @@ tr:not(:last-child) td {
 }
 .btn-account:hover {
   transform: translateY(-10px);
-  box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.7), 10px 10px 30px rgba(112, 34, 13, 0.2);
+  box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.7),
+    10px 10px 30px rgba(112, 34, 13, 0.2);
 }
 
 .btn-account a {
   padding: 20px 30px 20px 150px;
+}
+
+.icon-fiat-account::before {
+  background-image: url("../img/icon-fiat-account.png");
+}
+
+.icon-cent-account::before {
+   top: -40px;
+  background-image: url("../img/icon-cent-account.png");
 }
 
 .split-wrapper {
@@ -780,17 +866,37 @@ tr:not(:last-child) td {
 
 .security-section {
   position: relative;
-  background: radial-gradient(50% 50% at 80% 50%, rgba(255, 228, 133, 0.3) 0%, rgba(255, 228, 133, 0) 100%),
-    radial-gradient(50% 50% at 5% 35%, rgba(255, 194, 122, 0.2) 0%, rgba(255, 194, 122, 0) 100%);
+  background: radial-gradient(
+      50% 50% at 80% 50%,
+      rgba(255, 228, 133, 0.3) 0%,
+      rgba(255, 228, 133, 0) 100%
+    ),
+    radial-gradient(
+      50% 50% at 5% 35%,
+      rgba(255, 194, 122, 0.2) 0%,
+      rgba(255, 194, 122, 0) 100%
+    );
 }
 
 .discover-section {
   position: relative;
   padding-top: 150px;
   background-image: url("../img/discover-section-bg.svg"),
-    radial-gradient(50% 50% at 5% 35%, rgba(209, 121, 40, 0.2) 0%, rgba(209, 121, 40, 0) 100%),
-    radial-gradient(30% 30% at 25% 69%, rgba(185, 251, 255, 0.2) 0%, rgba(185, 251, 255, 0) 100%),
-    radial-gradient(50% 50% at 80% 50%, rgba(245, 0, 87, 0.17) 0%, rgba(245, 0, 87, 0) 100%);
+    radial-gradient(
+      50% 50% at 5% 35%,
+      rgba(209, 121, 40, 0.2) 0%,
+      rgba(209, 121, 40, 0) 100%
+    ),
+    radial-gradient(
+      30% 30% at 25% 69%,
+      rgba(185, 251, 255, 0.2) 0%,
+      rgba(185, 251, 255, 0) 100%
+    ),
+    radial-gradient(
+      50% 50% at 80% 50%,
+      rgba(245, 0, 87, 0.17) 0%,
+      rgba(245, 0, 87, 0) 100%
+    );
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -825,6 +931,29 @@ tr:not(:last-child) td {
   top: 200px;
 }
 
+.separator-banner {
+  margin-top: 100px;
+}
+
+.wrap-5-2 {
+  max-width: 100%;
+}
+.separator-wrapper .header-banner h2 {
+  max-width: 400px;
+  font-size: var(--font-size-30);
+  margin-right: 10px;
+}
+
+.header-banner {
+  display: flex;
+  align-items: center;
+}
+
+.header-banner .btn-black {
+  padding: 20px 40px;
+  font-size: 14px;
+}
+
 @media (max-width: 1200px) {
   .features-section {
     padding-bottom: 0;
@@ -837,16 +966,22 @@ tr:not(:last-child) td {
     font-size: 1rem;
   }
 
-  .header-banner {
-    max-width: 430px;
+  .account-description .heading img {
+    width: 180px;
   }
-  .header-banner h2 {
+  .header-banner {
+    justify-content: space-between;
+    max-width: 100%;
+  }
+
+  .separator-wrapper .header-banner h2 {
     font-size: var(--font-size-24);
+    max-width: 380px;
   }
 
   .header-banner::before {
-    width: 500px;
-    transform: translate(-10%, -3%);
+    left: 58%;
+    width: 510px;
   }
 }
 
@@ -921,10 +1056,29 @@ tr:not(:last-child) td {
     justify-content: center;
   }
 
-  .account-section::before {
-    top: 93%;
+  .separator-wrapper::before {
+    top: 80%;
+    height: 800px;
   }
 
+  .account-section {
+    margin-bottom: 0 !important;
+  }
+  .account-section::before {
+    top: 90%;
+    height: 670px;
+  }
+
+  .separator-wrapper {
+    padding: 50px 0;
+    margin-top: 300px;
+  }
+
+  .separator-banner {
+    padding: 0;
+  }
+
+  .header-banner,
   .separator-wrapper {
     display: flex;
     flex-direction: column;
@@ -934,17 +1088,21 @@ tr:not(:last-child) td {
   }
 
   .header-banner::before {
-    width: 500px;
-    top: 30%;
+    width: 470px;
+    top: -60%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
+  .header-banner,
+  .separator-banner,
   .account-section {
     margin-bottom: 0;
   }
 
-  .header-banner {
-    margin-top: 350px;
+  .separator-wrapper .header-banner h2 {
+    max-width: 100%;
+    margin-bottom: 30px;
   }
 
   .account-description .split-wrapper {
@@ -980,7 +1138,6 @@ tr:not(:last-child) td {
     align-items: center;
     text-align: center !important;
   }
-
 
   .security-list {
     grid-template-columns: 1fr;
@@ -1046,6 +1203,10 @@ tr:not(:last-child) td {
   .section-transition::before {
     top: 50%;
   }
+
+  .account-section::before {
+    height: 800px;
+  }
 }
 
 @media (max-width: 576.98px) {
@@ -1055,8 +1216,24 @@ tr:not(:last-child) td {
   table {
     margin-bottom: 40px;
   }
+  .separator-wrapper .header-banner h2 {
+    margin-right: 0;
+  }
 
-  .header-banner::before {top: 32%;}
+  .account-description .heading img {
+    width: 100px;
+  }
+  .icon-down {
+    margin-bottom: 50px;
+  }
+
+  .account-section::before {
+    height: 750px;
+  }
+
+  .header-banner::before {
+    top: -50%;
+  }
   .copy-section-btn .btn-white {
     padding: 20px 80px;
   }
@@ -1072,9 +1249,11 @@ tr:not(:last-child) td {
     padding-top: 70px 0 50px;
   }
 
-.account-section,
-.features-section {padding: 0 0 50px;}
-  
+  .account-section,
+  .features-section {
+    padding: 0 0 50px;
+  }
+
   .hero-section-header {
     padding: 0;
   }
@@ -1197,8 +1376,12 @@ tr:not(:last-child) td {
     flex-basis: auto;
   }
 
-  .btn-account p {font-size: var(--font-size-14);}
-  .btn-account .text-accent {margin-bottom: 0;}
+  .btn-account p {
+    font-size: var(--font-size-14);
+  }
+  .btn-account .text-accent {
+    margin-bottom: 0;
+  }
 
   .copy-section header .split-wrapper,
   .account-description .split-wrapper {
@@ -1210,7 +1393,15 @@ tr:not(:last-child) td {
     justify-content: center;
     align-items: center;
   }
+}
 
+@media (max-width: 375px) {
+  .account-section {
+    padding: 0;
+  }
+  .header-banner::before {
+    top: -50%;
+  }
 }
 
 @media (max-width: 320px) {
@@ -1245,5 +1436,18 @@ tr:not(:last-child) td {
   }
   .header-banner {
     margin-top: 280px;
+  }
+
+  .header-banner::before {
+    top: 3%;
+  }
+
+  .account-section::before {
+    top: 90%;
+  }
+
+  .separator-wrapper,
+  .header-banner {
+    margin-top: 100px;
   }
 }
