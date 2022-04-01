@@ -21,21 +21,9 @@
   --text-color-dark: #37333d;
   ---text-color-accent: #651fff;
   --icon-green: #a0ffc6;
-  --main-gradient: radial-gradient(
-      50% 50% at top right,
-      rgba(255, 228, 133, 0.2) 0%,
-      rgba(255, 228, 133, 0) 100%
-    ),
-    radial-gradient(
-      50% 50% at 70% 20%,
-      rgba(255, 228, 133, 0.3) 0%,
-      rgba(255, 228, 133, 0) 100%
-    ),
-    linear-gradient(
-      101.57deg,
-      #fea07a -131.04%,
-      rgba(135, 72, 239, 0.57) 60.49%
-    );
+  --main-gradient: radial-gradient(50% 50% at top right, rgba(255, 228, 133, 0.2) 0%, rgba(255, 228, 133, 0) 100%),
+    radial-gradient(50% 50% at 70% 20%, rgba(255, 228, 133, 0.3) 0%, rgba(255, 228, 133, 0) 100%),
+    linear-gradient(101.57deg, #fea07a -131.04%, rgba(135, 72, 239, 0.57) 60.49%);
 }
 
 html {
@@ -320,15 +308,13 @@ a {
   padding: 20px 31px;
   border-radius: 51px;
   background: linear-gradient(94.7deg, #fb44ff -53.76%, #ee950f 121.32%);
-  box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.7),
-    10px 10px 30px rgba(112, 34, 13, 0.2);
+  box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.7), 10px 10px 30px rgba(112, 34, 13, 0.2);
 }
 
 .btn-secondary {
   padding: 22px 60px;
   background: linear-gradient(96.76deg, #44a5ff -31.91%, #11ffd5 89.1%);
-  box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.5),
-    10px 10px 30px rgba(35, 44, 46, 0.3);
+  box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.5), 10px 10px 30px rgba(35, 44, 46, 0.3);
   border-radius: 51px;
 }
 
@@ -339,16 +325,14 @@ a {
   padding: 22px 60px;
   border-radius: 51px;
   background-color: var(--text-color-dark);
-  box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.4),
-    10px 10px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.4), 10px 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .btn-primary:focus,
 .btn-primary:hover,
 .btn-white:focus,
 .btn-white:hover {
-  box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.4),
-    10px 10px 30px rgba(255, 106, 249, 0.4);
+  box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.4), 10px 10px 30px rgba(255, 106, 249, 0.4);
   outline: none;
   text-decoration: none;
 }
@@ -358,8 +342,7 @@ a {
   color: var(--text-color-dark) !important;
   background-color: var(--white-color);
   text-decoration: none;
-  box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.4),
-    10px 10px 30px rgba(255, 106, 249, 0.4);
+  box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.4), 10px 10px 30px rgba(255, 106, 249, 0.4);
 }
 
 .btn-white {
@@ -491,8 +474,7 @@ a {
   background: transparent;
   border-radius: 17px;
   transform: translateY(-20px);
-  box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.4),
-    10px 10px 30px rgba(255, 106, 249, 0.4);
+  box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.4), 10px 10px 30px rgba(255, 106, 249, 0.4);
 }
 
 .item__list {
@@ -579,7 +561,7 @@ a {
 .account-stats > span {
   font-weight: 300;
 }
- 
+
 .account-stats::before {
   position: absolute;
   display: block;
@@ -599,22 +581,19 @@ a {
 }
 
 .account-stats::after {
- position: absolute;
+  position: absolute;
   display: block;
 
-  top: -30px;
-  right: -20px;
+  top: 0;
+  right: -20%;
+  transform: translate(-50%, -50%);
 
   content: "";
 
   width: 73px;
   height: 73px;
 
-  background: linear-gradient(
-    180deg,
-    #ffffff -35.42%,
-    rgba(255, 249, 249, 0) 186.11%
-  );
+  background: linear-gradient(180deg, #ffffff -35.42%, rgba(255, 249, 249, 0) 186.11%);
   border: 1px solid #ffffff;
   box-sizing: border-box;
   backdrop-filter: blur(4px);
@@ -637,11 +616,7 @@ a {
 
 table {
   width: 100%;
-  background: linear-gradient(
-    180deg,
-    #ffffff -22.4%,
-    rgba(255, 255, 255, 0.63) 58.87%
-  );
+  background: linear-gradient(180deg, #ffffff -22.4%, rgba(255, 255, 255, 0.63) 58.87%);
   border: 1px solid #ffffff;
   box-shadow: 18px 41px 50px -10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -735,11 +710,7 @@ tr:not(:last-child) td {
 
 .btn-account {
   position: relative;
-  background: linear-gradient(
-    180deg,
-    #ffffff -71.5%,
-    rgba(255, 255, 255, 0) 182.25%
-  );
+  background: linear-gradient(180deg, #ffffff -71.5%, rgba(255, 255, 255, 0) 182.25%);
   border: 1px solid #ffffff;
   box-sizing: border-box;
   box-shadow: 0px 57px 50px -20px rgba(97, 97, 97, 0.2);
@@ -784,8 +755,7 @@ tr:not(:last-child) td {
 }
 .btn-account:hover {
   transform: translateY(-10px);
-  box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.7),
-    10px 10px 30px rgba(112, 34, 13, 0.2);
+  box-shadow: -10px -10px 30px rgba(255, 255, 255, 0.7), 10px 10px 30px rgba(112, 34, 13, 0.2);
 }
 
 .btn-account a {
@@ -797,7 +767,7 @@ tr:not(:last-child) td {
 }
 
 .icon-cent-account::before {
-   top: -40px;
+  top: -40px;
   background-image: url("../img/icon-cent-account.png");
 }
 
@@ -866,37 +836,17 @@ tr:not(:last-child) td {
 
 .security-section {
   position: relative;
-  background: radial-gradient(
-      50% 50% at 80% 50%,
-      rgba(255, 228, 133, 0.3) 0%,
-      rgba(255, 228, 133, 0) 100%
-    ),
-    radial-gradient(
-      50% 50% at 5% 35%,
-      rgba(255, 194, 122, 0.2) 0%,
-      rgba(255, 194, 122, 0) 100%
-    );
+  background: radial-gradient(50% 50% at 80% 50%, rgba(255, 228, 133, 0.3) 0%, rgba(255, 228, 133, 0) 100%),
+    radial-gradient(50% 50% at 5% 35%, rgba(255, 194, 122, 0.2) 0%, rgba(255, 194, 122, 0) 100%);
 }
 
 .discover-section {
   position: relative;
   padding-top: 150px;
   background-image: url("../img/discover-section-bg.svg"),
-    radial-gradient(
-      50% 50% at 5% 35%,
-      rgba(209, 121, 40, 0.2) 0%,
-      rgba(209, 121, 40, 0) 100%
-    ),
-    radial-gradient(
-      30% 30% at 25% 69%,
-      rgba(185, 251, 255, 0.2) 0%,
-      rgba(185, 251, 255, 0) 100%
-    ),
-    radial-gradient(
-      50% 50% at 80% 50%,
-      rgba(245, 0, 87, 0.17) 0%,
-      rgba(245, 0, 87, 0) 100%
-    );
+    radial-gradient(50% 50% at 5% 35%, rgba(209, 121, 40, 0.2) 0%, rgba(209, 121, 40, 0) 100%),
+    radial-gradient(30% 30% at 25% 69%, rgba(185, 251, 255, 0.2) 0%, rgba(185, 251, 255, 0) 100%),
+    radial-gradient(50% 50% at 80% 50%, rgba(245, 0, 87, 0.17) 0%, rgba(245, 0, 87, 0) 100%);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1030,6 +980,10 @@ tr:not(:last-child) td {
   .copy-section .img,
   .img {
     order: 0;
+  }
+
+  .account-stats::after {
+    right: -10%;
   }
 
   .section-header {
@@ -1175,6 +1129,11 @@ tr:not(:last-child) td {
   .btn-account {
     max-width: 400px;
   }
+
+  .account-stats::after {
+    display: none;
+  }
+
   .account-description .split-wrapper {
     flex-direction: column;
     justify-content: center;
