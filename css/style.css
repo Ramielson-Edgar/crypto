@@ -746,6 +746,7 @@ tr:not(:last-child) td {
 
   z-index: 1;
 }
+
 .btn-account::after {
   filter: drop-shadow(0px 20px 50px rgba(254, 160, 122, 0.6));
 }
@@ -759,15 +760,18 @@ tr:not(:last-child) td {
 }
 
 .icon-fiat-account::before {
-  width: 200px;
-  height: 180px;
-  top: -40px;
-  left: -50px;
+  width: 130px;
+  height: 130px;
+  top: -30px;
+  left: 0;
   background-image: url("../img/icon-fiat-account.png");
 }
 
 .icon-cent-account::before {
+  width: 200px;
+  height: 180px;
   top: -40px;
+  left: -40px;
   background-image: url("../img/icon-cent-account.png");
 }
 
@@ -909,7 +913,7 @@ tr:not(:last-child) td {
     padding-bottom: 0;
   }
   .btn-account a {
-    padding: 20px 18px 20px 150px;
+    padding: 20px 18px 20px 120px;
   }
   .copy-section-btn a {
     padding: 15px 30px;
@@ -1191,6 +1195,7 @@ tr:not(:last-child) td {
   .section-transition::before {
     top: 14%;
   }
+
   table {
     margin-bottom: 40px;
   }
@@ -1277,13 +1282,12 @@ tr:not(:last-child) td {
     flex-basis: auto;
   }
 
-  .btn-account:first-child::after,
-  .btn-account:first-child::before {
-    height: 120px;
-    width: 120px;
+  .icon-cent-account::before {
+    height: 180px;
+    width: 180px;
 
-    top: -20px;
-    left: 0;
+    top: -40px;
+    left: -20px;
   }
 
   .copy-section-btn {
@@ -1383,19 +1387,24 @@ tr:not(:last-child) td {
 }
 
 @media (max-width: 320px) {
-  .btn-account:first-child::after,
-  .btn-account:first-child::before {
+  .icon-cent-account::before {
+    height: 160px;
+    width: 160px;
+    top: -40px;
+    left: -20px;
+  }
+
+  .icon-fiat-account::before {
     height: 120px;
     width: 120px;
-
     top: -40px;
-    left: -10px;
+    left: 0px;
   }
 
   .account-stats::before {
     left: 0;
   }
-  
+
   .btn-account a {
     padding: 10px 10px 10px 120px;
     font-size: 1rem;
