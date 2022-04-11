@@ -563,10 +563,10 @@ a {
   display: block;
 
   top: -30px;
-  left: -20px;
+  left: -51px;
 
-  width: 126px;
-  height: 100px;
+  width: 60%;
+  height: 150px;
 
   content: "";
 
@@ -1005,6 +1005,8 @@ tr:not(:last-child) td {
     text-align: center;
   }
 
+  .account-stats::before{ left: -20%;}
+
   .btn-account p {
     font-size: 1rem;
   }
@@ -1142,7 +1144,6 @@ tr:not(:last-child) td {
   }
 
   .account-stats::before {
-    left: 10px;
     top: -20px;
   }
 
@@ -1195,6 +1196,10 @@ tr:not(:last-child) td {
   .section-transition::before {
     top: 14%;
   }
+
+    .account-stats::before {
+      left: -17%;
+    }
 
   table {
     margin-bottom: 40px;
@@ -1402,7 +1407,7 @@ tr:not(:last-child) td {
   }
 
   .account-stats::before {
-    left: 0;
+    left: -10%;
   }
 
   .btn-account a {
